@@ -6,7 +6,7 @@ from pathlib import Path
 from os import path
 from botocore.exceptions import ClientError
 from argparse import ArgumentParser
-
+from .myssh import validation
 
 
 
@@ -235,7 +235,10 @@ if __name__ == '__main__':
         worker_node2=create_ec2(client,security_group_id,sub_net_zero,key_pair_name=key_pair_name,worker_name='worker_node2',tags=[{'Key': 'Name', 'Value': 'worker-node-02'},{'Key': 'project', 'Value': 'wecloud' }])
         
         
-        make_summary(client)
+        results=make_summary(client)
+        
+        validation(results=results)
+        
         t1=time.time()-t0
         print (f"Total time {t1} seconds ") 
         
