@@ -1,0 +1,4 @@
+weclouddata.pem
+venv/*
+.vscode/*
+.history/*
