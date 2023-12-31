@@ -35,3 +35,6 @@ To delete all resources associated with a specific VPC ID:
 - EXAMPLE: python delete-all.py  vpc-0f0595cb02601764f
 
 
+### Requirements
+https://franciscomosquera.com/2023/12/30/linux-servers-on-aws/
+
