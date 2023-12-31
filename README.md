@@ -12,10 +12,6 @@ Before you begin, ensure you have met the following requirements:
 - You have configured your AWS credentials (`~/.aws/config`).
 - Python3
 
-## Installation
-
-To install the necessary dependencies, run the following command:
-
 
 ## How to Execute
 
